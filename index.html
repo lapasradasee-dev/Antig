@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Open Graph Metadata -->
+  <title>แฟ้มสะสมผลงาน (PORTFOLIO) | นางสาวลภัสรดา สีทอง - เทคโนโลยีธุรกิจดิจิทัล</title>
+  <meta name="description" content="แฟ้มสะสมผลงาน (Portfolio) นางสาวลภัสรดา สีทอง นักศึกษาระดับปริญญาตรี ปีที่ 1 แผนกวิชาเทคโนโลยีธุรกิจดิจิทัล วิทยาลัยอาชีวศึกษานครศรีธรรมราช">
+  <meta name="keywords" content="ลภัสรดา สีทอง, Lapatsrada Seethong, เทคโนโลยีธุรกิจดิจิทัล, วิทยาลัยอาชีวศึกษานครศรีธรรมราช, Portfolio, แฟ้มสะสมผลงาน, ราวตากผ้าอัตโนมัติด้วยเซนเซอร์วัดฝน, เว็บไซต์ธุรกิจ">
+  <meta name="author" content="นางสาวลภัสรดา สีทอง (Lapatsrada Seethong)">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="แฟ้มสะสมผลงาน (PORTFOLIO) - นางสาวลภัสรดา สีทอง">
+  <meta property="og:description" content="แผนกวิชาเทคโนโลยีธุรกิจดิจิทัล วิทยาลัยอาชีวศึกษานครศรีธรรมราช">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  
+  <!-- Google Fonts: Prompt, Plus Jakarta Sans, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet (Clean White 60% / Sky Blue 30% / Navy Blue 10%) -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+</head>
+<body>
+
+  <!-- Background Ambience: Soft Sky Glows & Digital Grid Overlay -->
+  <div class="ambient-bg">
+    <div class="sky-orb sky-orb-1"></div>
+    <div class="sky-orb sky-orb-2"></div>
+    <div class="sky-orb sky-orb-3"></div>
+  </div>
+  <div class="digital-grid"></div>
+
+  <!-- ==========================================
+       Floating Glassmorphism Navbar
+       ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#cover" class="nav-brand" id="nav-brand-link">
+        <div class="brand-badge">LS</div>
+        <div class="brand-info">
+          <span class="brand-name">ลภัสรดา สีทอง</span>
+          <span class="brand-sub">เทคโนโลยีธุรกิจดิจิทัล • นครศรีธรรมราช</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#cover" class="nav-link active" id="link-cover" data-i18n="navCover">หน้าปก</a></li>
+          <li><a href="#about" class="nav-link" id="link-about" data-i18n="navAbout">ประวัติส่วนตัว</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills" data-i18n="navSkills">ทักษะความสามารถ</a></li>
+          <li><a href="#projects" class="nav-link" id="link-projects" data-i18n="navProjects">ผลงานเด่น</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact" data-i18n="navContact">ติดต่อกลับ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-toggle" title="Switch Language / สลับภาษา">
+          <button class="lang-btn active" data-lang="th" id="btn-lang-th">TH</button>
+          <button class="lang-btn" data-lang="en" id="btn-lang-en">EN</button>
+        </div>
+
+        <!-- Print / PDF Button -->
+        <button class="btn btn-outline-sky" onclick="window.print()" title="พิมพ์หรือบันทึกเป็น PDF" style="padding: 7px 14px; font-size: 0.84rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>
+          <span data-i18n="btnPrint">พิมพ์ / PDF</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       หน้า 1: หน้าปก (Cover Page / Hero)
+       ========================================== -->
+  <section class="hero-section" id="cover">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Title & Metadata -->
+        <div class="hero-content">
+          <div class="cover-super-tag">
+            <span class="live-dot"></span>
+            <span data-i18n="coverPageTag">หน้า 1: แฟ้มสะสมผลงาน (COVER PAGE)</span>
+          </div>
+
+          <h1 class="hero-portfolio-label">PORTFOLIO</h1>
+          <div class="hero-sub-label" data-i18n="heroSubLabel">แฟ้มสะสมผลงานวิชาการและวิชาชีพ</div>
+
+          <h2 class="hero-name" data-i18n="heroName">นางสาวลภัสรดา สีทอง</h2>
+
+          <div class="hero-degree-box">
+            <div class="hero-degree-level" data-i18n="heroDegree">นักศึกษาระดับปริญญาตรี ปีที่ 1</div>
+            <div class="hero-degree-dept" data-i18n="heroDept">สาขา/แผนกวิชา: เทคโนโลยีธุรกิจดิจิทัล</div>
+            <div class="hero-college-name" data-i18n="heroCollege">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+          </div>
+
+          <div class="typing-box">
+            <span>&gt;&gt;&nbsp;</span>
+            <span id="typing-text">มุ่งมั่นสู่การเป็นนักธุรกิจด้านคอมพิวเตอร์และดิจิทัล</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              <span data-i18n="btnHeroProjects">สำรวจผลงานเด่น</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="#about" class="btn btn-secondary" id="btn-hero-about">
+              <span data-i18n="btnHeroAbout">ประวัติส่วนตัว & การศึกษา</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </a>
+            <a href="#contact" class="btn btn-navy" id="btn-hero-contact">
+              <span data-i18n="btnHeroContact">ติดต่อกลับ</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-key-badges">
+            <div class="key-badge-card">
+              <span class="key-badge-icon">🎓</span>
+              <div>
+                <div class="key-badge-label" data-i18n="badgeYearLabel">ระดับการศึกษา</div>
+                <div class="key-badge-val" data-i18n="badgeYearVal">ปริญญาตรี ปีที่ 1</div>
+              </div>
+            </div>
+            <div class="key-badge-card">
+              <span class="key-badge-icon">📱</span>
+              <div>
+                <div class="key-badge-label" data-i18n="badgePhoneLabel">เบอร์โทรศัพท์</div>
+                <div class="key-badge-val">080-863-6658</div>
+              </div>
+            </div>
+            <div class="key-badge-card">
+              <span class="key-badge-icon">📧</span>
+              <div>
+                <div class="key-badge-label" data-i18n="badgeEmailLabel">อีเมลสถาบัน</div>
+                <div class="key-badge-val" style="font-size:0.86rem;">lapasrada.see@nvc.ac.th</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Framed Student Profile Photo -->
+        <div class="hero-visual-col">
+          <div class="cover-photo-frame">
+            <div class="photo-glow-backdrop"></div>
+            
+            <!-- Floating Chips -->
+            <div class="photo-chip chip-top-left">
+              <div class="chip-icon">💻</div>
+              <div>
+                <div class="chip-title">PROGRAM</div>
+                <div class="chip-value">เทคโนโลยีธุรกิจดิจิทัล</div>
+              </div>
+            </div>
+
+            <div class="photo-chip chip-bottom-right">
+              <div class="chip-icon">🏛️</div>
+              <div>
+                <div class="chip-title">COLLEGE</div>
+                <div class="chip-value">วอศ.นครศรีธรรมราช</div>
+              </div>
+            </div>
+
+            <!-- Profile Photo Element -->
+            <div class="student-img-wrapper">
+              <img src="assets/images/profile.jpg" alt="นางสาวลภัสรดา สีทอง - รูปถ่ายชุดนักศึกษา" class="student-photo">
+            </div>
+
+            <div class="cover-card-caption">
+              <div class="caption-name">นางสาวลภัสรดา สีทอง</div>
+              <div class="caption-role">นักศึกษาระดับปริญญาตรี • วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       หน้า 2: ประวัติส่วนตัว (About Me & Education)
+       ========================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="page-badge">
+          <span class="badge-page-num">02</span>
+          <span data-i18n="aboutBadge">หน้า 2: ประวัติส่วนตัว (ABOUT ME)</span>
+        </div>
+        <h2 class="section-title">
+          <span data-i18n="aboutTitleMain">ข้อมูลส่วนตัวและ</span><span class="text-sky" data-i18n="aboutTitleSky">เป้าหมายในอนาคต</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="aboutSubtitle">
+          ประวัติการศึกษา ข้อมูลการติดต่อ และความมุ่งมั่นสู่การเติบโตในสายงานเทคโนโลยีธุรกิจดิจิทัล
+        </p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Left Card: Personal Details & Career Goal -->
+        <div class="personal-card">
+          <div class="card-top-accent"></div>
+          
+          <div class="card-heading-wrap">
+            <div class="card-heading-icon">👤</div>
+            <h3 class="card-heading-title" data-i18n="personalDetailsTitle">ข้อมูลส่วนตัว (Personal Details)</h3>
+          </div>
+
+          <div class="info-table">
+            <div class="info-row">
+              <div class="info-icon">📝</div>
+              <div>
+                <div class="info-label" data-i18n="infoFullNameLabel">ชื่อ - นามสกุล</div>
+                <div class="info-val" data-i18n="infoFullNameVal">นางสาวลภัสรดา สีทอง (Lapatsrada Seethong)</div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">🎓</div>
+              <div>
+                <div class="info-label" data-i18n="infoEduCurrentLabel">การศึกษาปัจจุบัน</div>
+                <div class="info-val" data-i18n="infoEduCurrentVal">
+                  ปริญญาตรี ปีที่ 1 แผนกวิชาเทคโนโลยีธุรกิจดิจิทัล<br>
+                  วิทยาลัยอาชีวศึกษานครศรีธรรมราช
+                </div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">📞</div>
+              <div style="flex-grow:1;">
+                <div class="info-label" data-i18n="infoPhoneLabel">เบอร์โทรศัพท์ติดต่อ</div>
+                <div class="info-val">
+                  <a href="tel:0808636658" class="info-link">
+                    080-863-6658
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <button class="channel-action-btn" onclick="copyText('0808636658', 'คัดลอกเบอร์โทรศัพท์แล้ว')" title="คัดลอกเบอร์โทร">คัดลอก</button>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon">✉️</div>
+              <div style="flex-grow:1;">
+                <div class="info-label" data-i18n="infoEmailLabel">อีเมลติดต่อ</div>
+                <div class="info-val">
+                  <a href="mailto:lapasrada.see@nvc.ac.th" class="info-link">
+                    lapasrada.see@nvc.ac.th
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+              <button class="channel-action-btn" onclick="copyText('lapasrada.see@nvc.ac.th', 'คัดลอกอีเมลแล้ว')" title="คัดลอกอีเมล">คัดลอก</button>
+            </div>
+          </div>
+
+          <!-- Career Goal Section -->
+          <div class="career-goal-box">
+            <div class="goal-badge">
+              <span>🎯</span>
+              <span data-i18n="careerGoalTag">เป้าหมายในอนาคต (CAREER GOAL)</span>
+            </div>
+            <p class="career-goal-quote" data-i18n="careerGoalQuote">
+              มีความมุ่งมั่นที่จะนำความรู้ด้านเทคโนโลยีดิจิทัลและการบริหารจัดการมาประยุกต์ใช้ เพื่อเติบโตไปเป็น นักธุรกิจด้านคอมพิวเตอร์ ที่สามารถสร้างสรรค์นวัตกรรมและโซลูชันใหม่ๆ ตอบโจทย์ยุคดิจิทัล
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Card: Education Timeline -->
+        <div class="education-card">
+          <div class="card-top-accent"></div>
+
+          <div class="card-heading-wrap">
+            <div class="card-heading-icon">🏛️</div>
+            <h3 class="card-heading-title" data-i18n="eduTimelineTitle">ประวัติการศึกษา (Education)</h3>
+          </div>
+
+          <div class="edu-timeline">
+            
+            <!-- 1. ปริญญาตรี (ปัจจุบัน) -->
+            <div class="timeline-step active">
+              <div class="step-node"></div>
+              <div class="step-body">
+                <span class="step-status" data-i18n="stepStatusCurrent">ระดับปัจจุบัน</span>
+                <h4 class="step-title" data-i18n="eduStep1Title">ระดับปริญญาตรี (ปีที่ 1)</h4>
+                <div class="step-institution">
+                  <span>🏛️</span>
+                  <span data-i18n="eduStep1Inst">แผนกวิชาเทคโนโลยีธุรกิจดิจิทัล วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+                </div>
+                <p class="step-note" data-i18n="eduStep1Note">
+                  ศึกษาการประยุกต์ใช้เทคโนโลยีดิจิทัลขั้นสูง การบริหารจัดการธุรกิจดิจิทัล พาณิชย์อิเล็กทรอนิกส์ และการจัดการข้อมูลเชิงธุรกิจ
+                </p>
+              </div>
+            </div>
+
+            <!-- 2. ปวส. -->
+            <div class="timeline-step">
+              <div class="step-node"></div>
+              <div class="step-body">
+                <span class="step-status" style="background:var(--navy-secondary);" data-i18n="stepStatusGrad">สำเร็จการศึกษา</span>
+                <h4 class="step-title" data-i18n="eduStep2Title">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h4>
+                <div class="step-institution">
+                  <span>🏛️</span>
+                  <span data-i18n="eduStep2Inst">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+                </div>
+                <p class="step-note" data-i18n="eduStep2Note">
+                  มุ่งเน้นความเชี่ยวชาญด้านเทคโนโลยีธุรกิจ คอมพิวเตอร์ธุรกิจ และการพัฒนาโครงการนวัตกรรม
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. ปวช. -->
+            <div class="timeline-step">
+              <div class="step-node"></div>
+              <div class="step-body">
+                <span class="step-status" style="background:var(--navy-slate);" data-i18n="stepStatusGrad">สำเร็จการศึกษา</span>
+                <h4 class="step-title" data-i18n="eduStep3Title">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h4>
+                <div class="step-institution">
+                  <span>🏫</span>
+                  <span data-i18n="eduStep3Inst">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+                </div>
+                <p class="step-note" data-i18n="eduStep3Note">
+                  สร้างรากฐานด้านคอมพิวเตอร์และธุรกิจสารสนเทศ การทำงานร่วมกับฮาร์ดแวร์และซอฟต์แวร์
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. มัธยมศึกษาตอนต้น -->
+            <div class="timeline-step">
+              <div class="step-node"></div>
+              <div class="step-body">
+                <span class="step-status" style="background:var(--text-muted);" data-i18n="stepStatusGrad">สำเร็จการศึกษา</span>
+                <h4 class="step-title" data-i18n="eduStep4Title">ระดับมัธยมศึกษาตอนต้น</h4>
+                <div class="step-institution">
+                  <span>🏫</span>
+                  <span data-i18n="eduStep4Inst">โรงเรียนเมืองนครศรีธรรมราช</span>
+                </div>
+                <p class="step-note" data-i18n="eduStep4Note">
+                  การศึกษาขั้นพื้นฐาน สร้างเสริมทักษะทางวิชาการและกิจกรรมพัฒนาผู้เรียน
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       หน้า 3: ทักษะและความสนใจ (Skills & Interests)
+       ========================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="page-badge">
+          <span class="badge-page-num">03</span>
+          <span data-i18n="skillsBadge">หน้า 3: ทักษะและความสนใจ (SKILLS & INTERESTS)</span>
+        </div>
+        <h2 class="section-title">
+          <span data-i18n="skillsTitleMain">ทักษะความเชี่ยวชาญ &</span> <span class="text-sky" data-i18n="skillsTitleSky">ศักยภาพการทำงาน</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="skillsSubtitle">
+          บูรณาการทักษะด้านเทคโนโลยีสารสนเทศ ธุรกิจดิจิทัล และทักษะการทำงานร่วมกับผู้อื่นอย่างมืออาชีพ
+        </p>
+      </div>
+
+      <div class="skills-container-layout">
+        
+        <!-- Column 1: Hard Skills (ทักษะด้านเทคโนโลยีและธุรกิจ) -->
+        <div>
+          <div class="skills-column-title">
+            <span>⚙️</span>
+            <span data-i18n="hardSkillsTitle">ทักษะด้านเทคโนโลยีและธุรกิจ (Hard Skills)</span>
+            <span class="col-badge">4 Core Areas</span>
+          </div>
+
+          <div class="hard-skills-list">
+            
+            <!-- Skill 1 -->
+            <div class="skill-bar-card">
+              <div class="skill-header-meta">
+                <div class="skill-name-wrap">
+                  <span class="skill-icon-badge">🎨</span>
+                  <div class="skill-text-name" data-i18n="skill1Name">การออกแบบสื่อดิจิทัลและกราฟิกเบื้องต้น</div>
+                </div>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" style="width: 92%;"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="skill-pill">Canva Pro</span>
+                <span class="skill-pill">Adobe Photoshop</span>
+                <span class="skill-pill">Social Media Content</span>
+                <span class="skill-pill">Digital Banner</span>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-bar-card">
+              <div class="skill-header-meta">
+                <div class="skill-name-wrap">
+                  <span class="skill-icon-badge">📊</span>
+                  <div class="skill-text-name" data-i18n="skill2Name">การจัดการข้อมูลและระบบสารสนเทศ</div>
+                </div>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" style="width: 88%;"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="skill-pill">Data Management</span>
+                <span class="skill-pill">Information Systems</span>
+                <span class="skill-pill">Database Basics</span>
+                <span class="skill-pill">Data Analytics</span>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-bar-card">
+              <div class="skill-header-meta">
+                <div class="skill-name-wrap">
+                  <span class="skill-icon-badge">📑</span>
+                  <div class="skill-text-name" data-i18n="skill3Name">การใช้งานโปรแกรมสำนักงานและสื่อการนำเสนอ</div>
+                </div>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" style="width: 95%;"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="skill-pill">Microsoft Excel / Word</span>
+                <span class="skill-pill">PowerPoint</span>
+                <span class="skill-pill">Google Workspace</span>
+                <span class="skill-pill">รายงานและนำเสนอเชิงธุรกิจ</span>
+              </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-bar-card">
+              <div class="skill-header-meta">
+                <div class="skill-name-wrap">
+                  <span class="skill-icon-badge">🛍️</span>
+                  <div class="skill-text-name" data-i18n="skill4Name">การเข้าใจพื้นฐานธุรกิจและการตลาดดิจิทัล</div>
+                </div>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="skill-pill">Digital Business</span>
+                <span class="skill-pill">E-Commerce Strategy</span>
+                <span class="skill-pill">Online Marketing</span>
+                <span class="skill-pill">Customer Relations</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Soft Skills (ทักษะการทำงาน) -->
+        <div>
+          <div class="skills-column-title">
+            <span>🤝</span>
+            <span data-i18n="softSkillsTitle">ทักษะการทำงาน (Soft Skills)</span>
+            <span class="col-badge">Professional Growth</span>
+          </div>
+
+          <div class="soft-skills-list">
+            
+            <!-- Soft Skill 1 -->
+            <div class="soft-skill-card">
+              <div class="soft-icon-box">💬</div>
+              <div>
+                <h4 class="soft-skill-title" data-i18n="soft1Title">การสื่อสารและการประสานงาน</h4>
+                <p class="soft-skill-desc" data-i18n="soft1Desc">
+                  มีความสามารถในการถ่ายทอดข้อมูลอย่างชัดเจน ประสานงานระหว่างบุคคลและองค์กรได้อย่างราบรื่น มีมนุษยสัมพันธ์ที่ดี และพร้อมรับฟังความคิดเห็นเพื่อการทำงานเป็นทีมที่มีประสิทธิภาพ
+                </p>
+              </div>
+            </div>
+
+            <!-- Soft Skill 2 -->
+            <div class="soft-skill-card">
+              <div class="soft-icon-box">💡</div>
+              <div>
+                <h4 class="soft-skill-title" data-i18n="soft2Title">ความคิดสร้างสรรค์และการแก้ปัญหา</h4>
+                <p class="soft-skill-desc" data-i18n="soft2Desc">
+                  มุ่งเน้นการคิดนอกกรอบ ออกแบบไอเดียและโซลูชันใหม่ๆ ทางเทคโนโลยีเพื่อแก้ปัญหาทางธุรกิจ พร้อมวิเคราะห์สถานการณ์อย่างเป็นระบบและปรับเปลี่ยนกลยุทธ์ได้อย่างทันท่วงที
+                </p>
+              </div>
+            </div>
+
+            <!-- Soft Skill 3 -->
+            <div class="soft-skill-card">
+              <div class="soft-icon-box">⚡</div>
+              <div>
+                <h4 class="soft-skill-title" data-i18n="soft3Title">การเรียนรู้เทคโนโลยีใหม่ๆ อย่างรวดเร็ว</h4>
+                <p class="soft-skill-desc" data-i18n="soft3Desc">
+                  มีทัศนคติแบบเติบโต (Growth Mindset) มีความกระตือรือร้นในการศึกษาเครื่องมือ ซอฟต์แวร์ แพลตฟอร์ม และเทคโนโลยีดิจิทัลยุคใหม่อยู่เสมอ พร้อมนำมาปรับใช้ในการทำงานได้ทันที
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       หน้า 4: ผลงานหลักและโครงการ (Featured Projects)
+       ========================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="page-badge">
+          <span class="badge-page-num">04</span>
+          <span data-i18n="projectsBadge">หน้า 4: ผลงานหลักและโครงการ (FEATURED PROJECTS)</span>
+        </div>
+        <h2 class="section-title">
+          <span data-i18n="projectsTitleMain">ผลงานเด่น &</span> <span class="text-sky" data-i18n="projectsTitleSky">โครงงานนวัตกรรม</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="projectsSubtitle">
+          ผลงานชิ้นสำคัญที่แสดงถึงการนำความรู้ด้านเทคโนโลยี เว็บไซต์ และนวัตกรรมอัจฉริยะมาสร้างประโยชน์ได้จริง
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: เว็บไซต์ธุรกิจดิจิทัล -->
+        <div class="project-card">
+          <div class="project-banner">
+            <span class="project-badge-type">🌐 เว็บไซต์ & ธุรกิจดิจิทัล</span>
+            <span class="project-tag-level">โปรเจกต์เด่น</span>
+            <div class="project-illustration-wrap">
+              <span class="proj-big-icon">💻</span>
+              <span class="proj-sub-meta">Web Business & Digital Catalog</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj1Title">โปรเจกต์พัฒนาเว็บไซต์ธุรกิจและพาณิชย์ดิจิทัล</h3>
+            <p class="project-desc" data-i18n="proj1Desc">
+              การพัฒนาเว็บไซต์ธุรกิจเพื่อส่งเสริมการค้าออนไลน์และการประชาสัมพันธ์แบรนด์ ออกแบบโครงสร้างเว็บไซต์ตามหลัก UI/UX สะอาดตา ใช้งานง่าย รองรับการแสดงผลทุกหน้าจอ (Responsive Web Design) พร้อมระบบแคตตาล็อกสินค้าออนไลน์ และการเชื่อมโยงระบบการตลาดดิจิทัล
+            </p>
+
+            <div class="project-feature-box">
+              <div class="feature-box-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="proj1FeatTitle">จุดเด่นสำคัญของโครงงาน</span>
+              </div>
+              <ul class="feature-box-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="proj1Feat1">ระบบ Responsive Web Design ใช้งานได้สมบูรณ์ทั้งมือถือ แท็บเล็ต และคอมพิวเตอร์</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="proj1Feat2">ระบบแสดงรายการสินค้าและแคตตาล็อกดิจิทัล ช่วยเพิ่มโอกาสในการขาย</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="proj1Feat3">จัดทำสื่อภาพและแบนเนอร์สินค้าด้วย Canva & Photoshop สวยงามระดับมืออาชีพ</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Web Business</span>
+              <span class="tech-tag">UI/UX Design</span>
+              <span class="tech-tag">Canva Pro</span>
+              <span class="tech-tag">Photoshop</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary" onclick="openProjectModal('web')" style="width: 100%; padding: 11px 20px;">
+                <span data-i18n="btnViewProjectDetail">ดูรายละเอียดโครงงานฉบับเต็ม</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ราวตากผ้าอัตโนมัติด้วยเซนเซอร์วัดฝน -->
+        <div class="project-card">
+          <div class="project-banner" style="background: linear-gradient(135deg, #BAE6FD 0%, #E0F2FE 50%, #F0F9FF 100%);">
+            <span class="project-badge-type">🌧️ IoT & ระบบอัตโนมัติ</span>
+            <span class="project-tag-level">นวัตกรรมสิ่งประดิษฐ์</span>
+            <div class="project-illustration-wrap">
+              <span class="proj-big-icon">🌦️</span>
+              <span class="proj-sub-meta">Smart Rain-Sensing Clothesline</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title" data-i18n="proj2Title">โปรเจกต์ราวตากผ้าอัตโนมัติด้วยเซนเซอร์วัดฝน</h3>
+            <p class="project-desc" data-i18n="proj2Desc">
+              นวัตกรรมสิ่งประดิษฐ์ระบบอัจฉริยะ (IoT / Embedded Systems) ช่วงระดับ ปวช./ปวส. ออกแบบเพื่อแก้ปัญหาผ้าเปียกฝนเมื่อไม่มีคนอยู่บ้าน โดยใช้เซนเซอร์ตรวจจับหยดน้ำฝน (Raindrop Sensor) ทำงานร่วมกับชุดควบคุมมอเตอร์ดึงราวตากผ้าเก็บเข้าที่ร่มโดยอัตโนมัติเมื่อฝนตก และเลื่อนออกรับแดดเมื่อฝนหยุดตก
+            </p>
+
+            <div class="project-feature-box">
+              <div class="feature-box-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="proj2FeatTitle">จุดเด่นสำคัญของโครงงาน</span>
+              </div>
+              <ul class="feature-box-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="proj2Feat1">ตรวจจับละอองและหยดน้ำฝนได้ทันทีแบบ Real-Time ด้วย Raindrop Sensor</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="proj2Feat2">ควบคุมมอเตอร์เลื่อนราวผ้าเข้าที่ร่มและเลื่อนออกได้อย่างแม่นยำ พร้อมระบบจำกัดระยะ (Limit Switch)</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span data-i18n="proj2Feat3">มีไฟสถานะ LED และสวิตช์ Manual Override เพื่อความปลอดภัยสูงสุด</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Rain Sensor</span>
+              <span class="tech-tag">Microcontroller</span>
+              <span class="tech-tag">DC Motor Control</span>
+              <span class="tech-tag">Limit Switch</span>
+              <span class="tech-tag">IoT Prototype</span>
+              <span class="tech-tag">Circuit Design</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary" onclick="openProjectModal('clothesline')" style="width: 100%; padding: 11px 20px;">
+                <span data-i18n="btnViewProjectDetail">ดูรายละเอียดโครงงานฉบับเต็ม</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       หน้า 7: ข้อมูลติดต่อกลับ (Contact Page & Thank You)
+       ========================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      
+      <div class="contact-wrapper-card">
+        
+        <!-- Header: "Thank You" -->
+        <div class="thankyou-header">
+          <div class="page-badge" style="background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: #FFFFFF; margin-bottom: 12px;">
+            <span class="badge-page-num" style="background: #38BDF8;">07</span>
+            <span data-i18n="contactBadge">หน้า 7: ข้อมูลติดต่อกลับ (CONTACT PAGE)</span>
+          </div>
+          <h2 class="thankyou-big-text">Thank You</h2>
+          <p class="thankyou-sub-text" data-i18n="thankYouText">
+            ขอบคุณสำหรับการรับชมและพิจารณาแฟ้มสะสมผลงาน (PORTFOLIO)<br>
+            ยินดีและพร้อมรับโอกาสในการร่วมงาน ฝึกงาน และสร้างสรรค์นวัตกรรมดิจิทัลค่ะ
+          </p>
+        </div>
+
+        <!-- Contact Body Grid -->
+        <div class="contact-body-grid">
+          
+          <!-- Contact Info List -->
+          <div class="contact-info-col">
+            <div class="contact-summary-box">
+              <h3 class="contact-owner-name">นางสาวลภัสรดา สีทอง</h3>
+              <div class="contact-owner-dept">นักศึกษาระดับปริญญาตรี ปีที่ 1 • แผนกวิชาเทคโนโลยีธุรกิจดิจิทัล</div>
+              <div class="contact-owner-inst">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+            </div>
+
+            <div class="contact-channel-list">
+              
+              <!-- Phone -->
+              <div class="channel-card">
+                <div class="channel-left">
+                  <div class="channel-icon">📞</div>
+                  <div>
+                    <div class="channel-type" data-i18n="chPhoneLabel">เบอร์โทรศัพท์ (Tel)</div>
+                    <div class="channel-val">080-863-6658</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:6px;">
+                  <a href="tel:0808636658" class="channel-action-btn" title="กดโทรออก">โทร</a>
+                  <button class="channel-action-btn" onclick="copyText('0808636658', 'คัดลอกเบอร์โทรศัพท์สำเร็จ')">คัดลอก</button>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="channel-card">
+                <div class="channel-left">
+                  <div class="channel-icon">✉️</div>
+                  <div>
+                    <div class="channel-type" data-i18n="chEmailLabel">อีเมล (E-mail)</div>
+                    <div class="channel-val" style="font-size:0.96rem;">lapasrada.see@nvc.ac.th</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:6px;">
+                  <a href="mailto:lapasrada.see@nvc.ac.th" class="channel-action-btn" title="ส่งอีเมล">ส่งเมล</a>
+                  <button class="channel-action-btn" onclick="copyText('lapasrada.see@nvc.ac.th', 'คัดลอกอีเมลสำเร็จ')">คัดลอก</button>
+                </div>
+              </div>
+
+              <!-- Location / College -->
+              <div class="channel-card">
+                <div class="channel-left">
+                  <div class="channel-icon">🏛️</div>
+                  <div>
+                    <div class="channel-type" data-i18n="chInstLabel">สถานศึกษา (Institution)</div>
+                    <div class="channel-val" style="font-size:0.92rem;">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                  </div>
+                </div>
+                <span class="tech-tag" style="background:var(--color-sky-100);">Nakhon Si Thammarat</span>
+              </div>
+
+            </div>
+
+            <div style="margin-top: 24px;">
+              <button class="btn btn-secondary" onclick="window.print()" style="width:100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>
+                <span data-i18n="btnPrintPortfolio">พิมพ์หรือบันทึกพอร์ตโฟลิโอ (Save as PDF)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col">
+            <h4 class="form-title" data-i18n="formTitle">ส่งข้อความติดต่อกลับ</h4>
+            <p class="form-sub" data-i18n="formSub">กรอกข้อมูลและข้อความด้านล่างเพื่อติดต่อหรือส่งข้อเสนอ</p>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label" data-i18n="lblFormName">ชื่อ - นามสกุล หรือชื่อหน่วยงาน *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="เช่น คุณสมชาย ใจดี / บริษัท ดิจิทัล โซลูชัน" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label" data-i18n="lblFormEmail">อีเมล หรือ เบอร์โทรศัพท์ติดต่อกลับ *</label>
+                <input type="text" id="contact-email" class="form-control" placeholder="example@email.com หรือ 08X-XXX-XXXX" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label" data-i18n="lblFormSubject">หัวข้อการติดต่อ *</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="เช่น ติดต่อฝึกงาน / ชวนร่วมโครงการ / สอบถามผลงาน" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label" data-i18n="lblFormMessage">รายละเอียดข้อความ *</label>
+                <textarea id="contact-message" class="form-control" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%; padding: 13px; font-size: 0.96rem;">
+                <span data-i18n="btnSendMsg">ส่งข้อความติดต่อ</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Footer
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-owner">นางสาวลภัสรดา สีทอง (Lapatsrada Seethong)</div>
+      <div class="footer-dept">แผนกวิชาเทคโนโลยีธุรกิจดิจิทัล • วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+      <div class="footer-rights">© 2026 นางสาวลภัสรดา สีทอง. สงวนลิขสิทธิ์ แฟ้มสะสมผลงานดิจิทัล (PORTFOLIO)</div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       Interactive Project Case Study Modal
+       ========================================== -->
+  <div class="modal-backdrop" id="project-modal" onclick="handleBackdropClick(event)">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close modal">✕</button>
+      <div id="modal-project-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-msg" id="toast-msg">
+    <span id="toast-icon">✓</span>
+    <span id="toast-text">คัดลอกข้อมูลสำเร็จ</span>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" title="กลับสู่ด้านบน" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
